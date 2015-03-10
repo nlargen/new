@@ -7,20 +7,16 @@ public class Queue
 	{
 		this.d2f = null; 
 	}
-	public void enqueue(String name)
+	public void enqueue(person name)
 	{
-		person n = new person(name); 
+		person n = new person(name.getName()); 
 		if(this.d2f == null)
 		{
-			this.d2f = n; 
 			n.setFirstperson(this.d2f);
-		}
-		else 
-		{
-			
 			this.d2f = n; 
 			
 		}
+		
 	}
 	public void display() throws Exception
 	{
